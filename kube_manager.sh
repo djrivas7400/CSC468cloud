@@ -16,6 +16,7 @@ sudo systemctl restart nfs-kernel-server
 kubeadm init > /opt/keys/kube.log
 sudo touch /opt/keys/kube_done
 
+
 # the username needs to be changed
 while IFS= read -r line; do
   mkdir -p /users/$line/.kube
